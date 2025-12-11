@@ -1,3 +1,5 @@
+[![Cypress Tests Pipeline](https://github.com/LauraFSantiago/cypress-ecommerce-portfolio/actions/workflows/main.yml/badge.svg)](https://github.com/LauraFSantiago/cypress-ecommerce-portfolio/actions/workflows/main.yml)
+
 # 🛒 Swag Labs Automation - Cypress E2E
 
 Este projeto consiste em uma suíte de testes automatizados End-to-End (E2E) para a plataforma de e-commerce **Swag Labs**, focado em garantir a qualidade do fluxo crítico de vendas (Login, Carrinho e Checkout).
