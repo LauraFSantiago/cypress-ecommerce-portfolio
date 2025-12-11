@@ -1,2 +1,2 @@
-// Arquivo de suporte do Cypress
+import "allure-cypress";
 import './commands'

@@ -18,6 +18,12 @@ O projeto utiliza o padrão **Page Objects** para separar a lógica dos testes d
 - `cypress/e2e/`: Contém os arquivos de teste (`login.cy.js`, `compras.cy.js`, `checkout.cy.js`).
 - `cypress/support/pages/`: Contém as classes das páginas e seus métodos (`login.page.js`, `inventory.page.js`, `checkout.page.js`).
 
+## 📊 Relatório de Testes (Visual)
+
+Abaixo, o painel do Allure Report comprovando a execução de 100% dos testes (UI + API + BDD) com sucesso.
+
+![Painel Allure Report](./assets/relatorio-allure.png)
+
 ## 🧪 Cenários Automatizados
 
 ### 1. Login

@@ -2,10 +2,11 @@ const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const { addCucumberPreprocessorPlugin } = require("@badeball/cypress-cucumber-preprocessor");
 const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
+const { allureCypress } = require("allure-cypress/reporter");
 
 module.exports = defineConfig({
   e2e: {
-    // testes = files .feature, não mais só .cy.js
+    supportFile: "cypress/support/e2e.js",
     specPattern: "**/*.feature",
     blockHosts: ["*.backtrace.io"],
     async setupNodeEvents(on, config) {
@@ -17,6 +18,11 @@ module.exports = defineConfig({
           plugins: [createEsbuildPlugin(config)],
         })
       );
+      //relatorio visual
+      allureCypress(on, config, {
+        resultsDir: "allure-results",
+      });
+
       return config;
     },
   },
