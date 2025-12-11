@@ -24,6 +24,8 @@ Abaixo, o painel do Allure Report comprovando a execução de 100% dos testes (U
 
 ![Painel Allure Report](./assets/relatorio-allure.png)
 
+## 🐳 Projeto dockerizado. Para rodar, basta um comando.
+
 ## 🧪 Cenários Automatizados
 
 ### 1. Login
