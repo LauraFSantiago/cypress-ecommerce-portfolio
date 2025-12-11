@@ -49,6 +49,7 @@ O projeto utiliza o padrão **Page Objects** para separar a lógica dos testes d
 - ✅ Integração com **Cucumber**.
 - ✅ Escrita de cenários em **Gherkin** (PT-BR).
 - ✅ Reutilização de Steps para escalabilidade.
+- ✅ Data Driven Testing: Validação de múltiplos cenários de login (bloqueado, senha errada, vazio) usando tabelas de exemplos.
 
 ## ⚙️ Como rodar o projeto
 

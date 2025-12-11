@@ -5,8 +5,12 @@ Given("que acesso a página de login do Swag Labs", () => {
 });
 
 When("preencho o usuário {string} e a senha {string}", (usuario, senha) => {
-  cy.get('[data-test="username"]').type(usuario);
-  cy.get('[data-test="password"]').type(senha);
+  if (usuario) {
+    cy.get('[data-test="username"]').type(usuario);
+  }
+  if (senha) {
+    cy.get('[data-test="password"]').type(senha);
+  }
 });
 
 When("clico no botão de login", () => {
@@ -16,4 +20,9 @@ When("clico no botão de login", () => {
 Then("devo ser redirecionado para a página de produtos", () => {
   cy.url().should("include", "/inventory.html");
   cy.get('.title').should('have.text', 'Products');
+});
+
+Then("devo ver a mensagem {string}", (mensagemEsperada) => {
+  cy.get('[data-test="error"]').should("be.visible");
+  cy.get('[data-test="error"]').should("contain", mensagemEsperada);
 });
