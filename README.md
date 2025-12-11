@@ -35,6 +35,13 @@ O projeto utiliza o padrão **Page Objects** para separar a lógica dos testes d
 - ✅ Finalização de compra com sucesso ("Thank you for your order!").
 - ✅ Validação de campos obrigatórios (Mensagens de erro).
 
+### 4. API Testing (Back-end)
+
+- ✅ Validação de status code (200 OK, 201 Created).
+- ✅ Validação de contrato (Campos do JSON).
+- ✅ Testes de performance (Tempo de resposta da API).
+- ✅ Massa de dados dinâmica (Gerador de e-mail aleatório para evitar conflitos).
+
 ## ⚙️ Como rodar o projeto
 
 1. Clone o repositório:
