@@ -10,6 +10,14 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^15.7.1"
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^15.7.1",
+    "esbuild": "^0.27.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/support/step_definitions/*.{js,ts}"
+    ]
   }
 }

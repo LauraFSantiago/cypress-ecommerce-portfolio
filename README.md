@@ -44,6 +44,12 @@ O projeto utiliza o padrão **Page Objects** para separar a lógica dos testes d
 - ✅ Testes de performance (Tempo de resposta da API).
 - ✅ Massa de dados dinâmica (Gerador de e-mail aleatório para evitar conflitos).
 
+### 5. BDD (Behavior Driven Development) 🥒
+
+- ✅ Integração com **Cucumber**.
+- ✅ Escrita de cenários em **Gherkin** (PT-BR).
+- ✅ Reutilização de Steps para escalabilidade.
+
 ## ⚙️ Como rodar o projeto
 
 1. Clone o repositório:
