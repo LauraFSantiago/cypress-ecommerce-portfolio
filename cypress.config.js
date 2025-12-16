@@ -6,9 +6,11 @@ const { allureCypress } = require("allure-cypress/reporter");
 
 module.exports = defineConfig({
   e2e: {
+    defaultCommandTimeout: 10000,
     supportFile: "cypress/support/e2e.js",
-    specPattern: "**/*.feature",
+    specPattern: ["**/*.feature", "**/*.cy.js"],
     blockHosts: ["*.backtrace.io"],
+    baseUrl: 'https://www.stz.com.br',
     async setupNodeEvents(on, config) {
       // conect Cucumber to Cypress
       await addCucumberPreprocessorPlugin(on, config);

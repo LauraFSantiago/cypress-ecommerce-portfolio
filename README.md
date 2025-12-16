@@ -59,6 +59,15 @@ Abaixo, o painel do Allure Report comprovando a execução de 100% dos testes (U
 - ✅ Reutilização de Steps para escalabilidade.
 - ✅ Data Driven Testing: Validação de múltiplos cenários de login (bloqueado, senha errada, vazio) usando tabelas de exemplos.
 
+### 6. Security Testing (DevSecOps) 🛡️
+
+Além dos fluxos funcionais, foi implementada uma suíte de **testes de segurança ofensiva** automatizados, focada na validação de vulnerabilidades em aplicações reais (Target: E-commerce em Produção).
+
+- ✅ **Proteção XSS (Cross-Site Scripting):** Simulação de injeção de scripts maliciosos (`<script>alert(...)</script>`) em campos de busca.
+- ✅ **Intercepção de Eventos:** Monitoramento de eventos do navegador (`window:alert`) via `cy.stub()` para garantir que payloads não são executados.
+- ✅ **Sanitização de Inputs:** Validação de que a aplicação realiza o _escape_ correto de caracteres especiais HTML.
+- ✅ **Bypass de Erros de Terceiros:** Tratamento de exceções (`uncaught:exception`) para garantir a estabilidade dos testes em ambientes de produção com scripts de analytics/ads.
+
 ## ⚙️ Como rodar o projeto
 
 1. Clone o repositório:
